@@ -1,0 +1,42 @@
+{
+  "tankmate": {
+    "version": "1.11",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.11.apk",
+    "notes": "Your two propane warnings are here — Switchover Warning when the feeding tank runs low, and Critical Backup when the reserve drops under half. Each has its own sound switch in Settings."
+  },
+  "batterybuddy": {
+    "version": "1.15",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.15.apk",
+    "notes": "Freezing and Heat alarms can now be silenced one at a time — a silenced alarm still shows on screen, it just makes no sound. Your saved banks carry over."
+  },
+  "solarbuddy": {
+    "version": "1.10",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.10.apk",
+    "notes": "A tidy-up release: the version on the About line is the true version, Check for updates opens the real updates page in your browser, and the footer now carries our full name — Off Grid Buddy Solutions."
+  },
+  "buddyboard": {
+    "version": "1.9",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.9.apk",
+    "notes": "Buddy Board now opens with any two Buddy apps — Water Buddy counts. Propane shows your two true warnings, Switchover Warning and Critical Backup, each with its own sound switch."
+  },
+  "offgridbuddy": {
+    "version": "2.9",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.9.apk",
+    "notes": "The update checker now tells the truth about its own version, and the Dash & Alarms list carries both propane warnings — Switchover Warning and Critical Backup. Your dash choices carry over."
+  },
+  "waterbuddy": {
+    "version": "1.4",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.4.apk",
+    "notes": "Words fixed to match the real thing: the heater runs on 12-volt DC power — from a battery with an inline fuse, or a plug-in supply that feeds the DC input. Water Buddy itself never touches house power."
+  },
+  "buddytech": {
+    "version": "1.2",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.2.apk",
+    "notes": "A tidy-up release: the version on the About line is the true version, Open updates page opens the real updates page in your browser, and the footer now carries our full name — Off Grid Buddy Solutions."
+  },
+  "buddyboardlite": {
+    "version": "1.1",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.1.apk",
+    "notes": "A tidy-up release: the version shown is the true version, the Updates button opens the real updates page in your browser, and our full name — Off Grid Buddy Solutions — is on the page."
+  }
+}

@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Buddy Family Updates — Off Grid Buddy Solutions</title>
+<script type="application/json" id="buddy-updates">{"tankmate":{"version":"1.11","apk":"https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.11.apk","notes":"Your two propane warnings are here — Switchover Warning when the feeding tank runs low, and Critical Backup when the reserve drops under half. Each has its own sound switch in Settings."},"batterybuddy":{"version":"1.15","apk":"https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.15.apk","notes":"Freezing and Heat alarms can now be silenced one at a time — a silenced alarm still shows on screen, it just makes no sound. Your saved banks carry over."},"solarbuddy":{"version":"1.10","apk":"https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.10.apk","notes":"A tidy-up release: the version on the About line is the true version, Check for updates opens the real updates page in your browser, and the footer now carries our full name — Off Grid Buddy Solutions."},"buddyboard":{"version":"1.9","apk":"https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.9.apk","notes":"Buddy Board now opens with any two Buddy apps — Water Buddy counts. Propane shows your two true warnings, Switchover Warning and Critical Backup, each with its own sound switch."},"offgridbuddy":{"version":"2.9","apk":"https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.9.apk","notes":"The update checker now tells the truth about its own version, and the Dash & Alarms list carries both propane warnings — Switchover Warning and Critical Backup. Your dash choices carry over."},"waterbuddy":{"version":"1.4","apk":"https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.4.apk","notes":"Words fixed to match the real thing: the heater runs on 12-volt DC power — from a battery with an inline fuse, or a plug-in supply that feeds the DC input. Water Buddy itself never touches house power."},"buddytech":{"version":"1.2","apk":"https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.2.apk","notes":"A tidy-up release: the version on the About line is the true version, Open updates page opens the real updates page in your browser, and the footer now carries our full name — Off Grid Buddy Solutions."},"buddyboardlite":{"version":"1.1","apk":"https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.1.apk","notes":"A tidy-up release: the version shown is the true version, the Updates button opens the real updates page in your browser, and our full name — Off Grid Buddy Solutions — is on the page."}}</script>
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#f6ecd1;
+    --bg-deep:#efe3bd;
+    --surface:#fffdf4;
+    --surface-warm:#fff8df;
+    --ink:#1c2e21;
+    --ink-soft:#3d4f42;
+    --muted:#6a7a6d;
+    --green:#1d4d2c;
+    --green-hover:#265f38;
+    --green-ink:#ffffff;
+    --orange:#d97316;
+    --orange-soft:#fdf0dd;
+    --border:#e6d9ae;
+    --border-strong:#d9c98f;
+    --shadow:0 1px 0 rgba(29,77,44,.06), 0 10px 24px rgba(62,48,8,.08);
+    --radius-card:20px;
+    --radius-btn:14px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#121a14;
+      --bg-deep:#0e1510;
+      --surface:#1d2920;
+      --surface-warm:#232f25;
+      --ink:#f3edd8;
+      --ink-soft:#d8e0d2;
+      --muted:#a8b5a3;
+      --green:#2f7a48;
+      --green-hover:#379157;
+      --green-ink:#ffffff;
+      --orange:#f09a3e;
+      --orange-soft:#2e2418;
+      --border:#334638;
+      --border-strong:#425a49;
+      --shadow:0 10px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family: ui-sans-system, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    line-height:1.5;
+  }
+  .wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:28px 18px 36px;
+  }
+  /* Header */
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--green);
+  }
+  @media (prefers-color-scheme: dark){ .eyebrow{color:#8fd0a2} }
+  .eyebrow::before{content:"";width:28px;height:3px;background:var(--orange);border-radius:99px;display:inline-block}
+  h1{
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight:700;
+    font-size:42px;
+    line-height:.95;
+    letter-spacing:-.02em;
+    margin:12px 0 0;
+    color:var(--green);
+  }
+  @media (prefers-color-scheme: dark){ h1{color:var(--ink)} }
+  @media (max-width:420px){ h1{font-size:36px} }
+  .promise{
+    margin:14px 0 0;
+    font-size:18px;
+    line-height:1.45;
+    color:var(--ink-soft);
+    max-width:56ch;
+  }
+  .promise strong{color:var(--ink);font-weight:700}
+  .updated{margin:10px 0 0;font-size:14px;font-weight:600;color:var(--muted)}
+  .steps{
+    display:flex;gap:10px;flex-wrap:wrap;
+    margin:20px 0 6px;
+  }
+  .step{
+    flex:1 1 150px;
+    display:flex;align-items:center;gap:10px;
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:12px 14px;
+  }
+  .step-num{
+    width:32px;height:32px;flex:0 0 32px;border-radius:50%;
+    background:var(--orange);color:#fff;font-weight:800;font-size:15px;
+    display:grid;place-items:center;
+  }
+  .step span{font-size:14.5px;font-weight:600;line-height:1.3;color:var(--ink)}
+  .step small{display:block;font-weight:500;color:var(--muted);font-size:13px;margin-top:1px}
+
+  /* Cards */
+  .list{margin-top:22px;display:flex;flex-direction:column;gap:16px}
+  .card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius-card);
+    box-shadow:var(--shadow);
+    padding:20px 20px 20px;
+    overflow:hidden;
+  }
+  .card-top{display:flex;gap:16px;align-items:flex-start}
+  .icon{
+    width:52px;height:52px;flex:0 0 52px;border-radius:14px;
+    background:var(--surface-warm);
+    border:1px solid var(--border);
+    display:grid;place-items:center;color:var(--green);
+  }
+  @media (prefers-color-scheme: dark){ .icon{color:#a9d9b8} }
+  .icon svg{width:28px;height:28px}
+  .card-head{flex:1;min-width:0}
+  .app-name{
+    font-family: Georgia, "Iowan Old Style", serif;
+    font-size:24px;font-weight:700;line-height:1.05;letter-spacing:-.01em;margin:2px 0 0;
+  }
+  .version{
+    margin-top:6px;
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:14px;font-weight:700;color:var(--green);
+    background:var(--orange-soft);
+    border:1px solid var(--border);
+    padding:5px 10px;border-radius:999px;
+  }
+  @media (prefers-color-scheme: dark){ .version{color:#f5c07a} }
+  .version i{width:7px;height:7px;border-radius:50%;background:var(--orange);display:inline-block}
+  .whats{
+    margin:14px 0 0;
+    font-size:16.5px;line-height:1.5;color:var(--ink-soft);
+  }
+  .download{
+    margin-top:18px;
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    width:100%;min-height:58px;
+    background:var(--green);color:var(--green-ink);
+    text-decoration:none;
+    font-size:18px;font-weight:800;letter-spacing:.01em;
+    border-radius:var(--radius-btn);
+    border:1px solid var(--green);
+    padding:16px 18px;
+    transition:background .15s ease, transform .1s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .download:hover{background:var(--green-hover)}
+  .download:active{transform:scale(.99)}
+  .download:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+  .download svg{width:20px;height:20px;flex:0 0 20px}
+  .file-note{
+    margin:10px 2px 0;text-align:center;font-size:13.5px;color:var(--muted);
+  }
+  .file-note code{
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size:12.5px;background:var(--surface-warm);border:1px solid var(--border);
+    padding:2px 6px;border-radius:6px;color:var(--ink-soft);word-break:break-all;
+  }
+  .file-note a{color:var(--green);font-weight:600}
+  @media (prefers-color-scheme: dark){ .file-note a{color:#8fd0a2} }
+  .report{
+    display:block;margin:12px 2px 0;text-align:center;
+    font-size:14.5px;font-weight:600;color:var(--green);text-underline-offset:3px;
+  }
+  @media (prefers-color-scheme: dark){ .report{color:#8fd0a2} }
+  .report:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:6px}
+
+  footer{
+    margin-top:28px;padding:18px 4px 0;border-top:1px solid var(--border);
+  }
+  .lite{
+    display:flex;gap:12px;align-items:flex-start;
+    background:transparent;
+  }
+  .lite-dot{width:10px;height:10px;border-radius:50%;background:var(--orange);margin-top:7px;flex:0 0 10px}
+  .lite p{margin:0;font-size:15px;line-height:1.55;color:var(--muted)}
+  .lite p strong{color:var(--ink-soft)}
+  .fine{margin-top:16px;font-size:13px;color:var(--muted);text-align:center}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="eyebrow">Off Grid Buddy Solutions</div>
+  <h1>Buddy Family Updates</h1>
+  <p class="updated">Updated November 3, 2026 · Eight programs</p>
+  <p class="promise">Tap <strong>Download</strong>, then tap <strong>Install</strong> — that’s the whole upgrade. Your notebooks and settings carry over.</p>
+
+  <section class="list" aria-label="Apps">
+
+    <!-- TankMate -->
+    <article class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8"/><path d="M9 3v3.2c0 .5-.2 1-.6 1.4-.9.9-1.4 2-1.4 3.4v7a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3v-7c0-1.4-.5-2.5-1.4-3.4-.4-.4-.6-.9-.6-1.4V3"/><path d="M7 14h10"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">TankMate</h2>
+          <div class="version"><i></i> You’re updating to v1.11</div>
+        </div>
+      </div>
+      <p class="whats">Your two propane warnings are here — Switchover Warning when the feeding tank runs low, and Critical Backup when the reserve drops under half. Each has its own sound switch in Settings.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.11.apk" data-app="TankMate" aria-label="Download TankMate">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download TankMate
+      </a>
+      <p class="file-note"><code>TankMate-1.11.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/TankMate-1.11-web.zip">Web edition (.zip)</a></p>
+    </article>
+
+    <!-- Voltkeep Buddy -->
+    <article class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8" width="16" height="9" rx="2"/><path d="M21.5 11v3"/><path d="M11 9.5 9.2 13h3L10.4 16.5"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">Voltkeep Buddy</h2>
+          <div class="version"><i></i> You’re updating to v1.15</div>
+        </div>
+      </div>
+      <p class="whats">Freezing and Heat alarms can now be silenced one at a time — a silenced alarm still shows on screen, it just makes no sound. Your saved banks carry over.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.15.apk" data-app="Voltkeep Buddy" aria-label="Download Voltkeep Buddy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download Voltkeep Buddy
+      </a>
+      <p class="file-note"><code>VoltkeepBuddy-1.15.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/VoltkeepBuddy-1.15-web.zip">Web edition (.zip)</a></p>
+      <a class="report" href="mailto:ashleygutshall82@gmail.com?subject=Voltkeep%20Buddy%20problem%20report&amp;body=What%20happened%3A%0A%0AWhat%20it%20should%20have%20done%3A%0A%0AWhat%20the%20screen%20showed%3A%0A">Report a problem with Voltkeep Buddy</a>
+    </article>
+
+    <!-- BuddyRay -->
+    <article class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5 5l1.7 1.7M17.3 17.3 19 19M19 5l-1.7 1.7M6.7 17.3 5 19"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">BuddyRay</h2>
+          <div class="version"><i></i> You’re updating to v1.10</div>
+        </div>
+      </div>
+      <p class="whats">A tidy-up release: the version on the About line is the true version, Check for updates opens the real updates page in your browser, and the footer now carries our full name — Off Grid Buddy Solutions.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.10.apk" data-app="BuddyRay" aria-label="Download BuddyRay">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download BuddyRay
+      </a>
+      <p class="file-note"><code>BuddyRay-1.10.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/BuddyRay-1.10-web.zip">Web edition (.zip)</a></p>
+      <a class="report" href="mailto:ashleygutshall82@gmail.com?subject=BuddyRay%20problem%20report&amp;body=What%20happened%3A%0A%0AWhat%20it%20should%20have%20done%3A%0A%0AWhat%20the%20screen%20showed%3A%0A">Report a problem with BuddyRay</a>
+    </article>
+
+    <!-- Buddy Board -->
+    <article class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M7 13a7 7 0 0 1 10 0"/><circle cx="12" cy="9.2" r="1" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">Buddy Board</h2>
+          <div class="version"><i></i> You’re updating to v1.9</div>
+        </div>
+      </div>
+      <p class="whats">Buddy Board now opens with any two Buddy apps — Water Buddy counts. Propane shows your two true warnings, Switchover Warning and Critical Backup, each with its own sound switch.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.9.apk" data-app="Buddy Board" aria-label="Download Buddy Board">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download Buddy Board
+      </a>
+      <p class="file-note"><code>BuddyBoard-1.9.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/BuddyBoard-1.9-web.zip">Web edition (.zip)</a></p>
+    </article>
+
+    <!-- Off Grid Buddy -->
+    <article class="card" style="border-color:var(--border-strong)">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true" style="background:var(--green);border-color:var(--green);color:#fff">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M12 12.2 10.8 15h2.6L12 18"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">Off Grid Buddy</h2>
+          <div class="version"><i></i> You’re updating to v2.9</div>
+        </div>
+      </div>
+      <p class="whats">The update checker now tells the truth about its own version, and the Dash &amp; Alarms list carries both propane warnings — Switchover Warning and Critical Backup. Your dash choices carry over.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.9.apk" data-app="Off Grid Buddy" aria-label="Download Off Grid Buddy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download Off Grid Buddy
+      </a>
+      <p class="file-note"><code>OffGridBuddy-2.9.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/OffGridBuddy-2.9-web.zip">Web edition (.zip)</a></p>
+    </article>
+
+    <!-- Buddy Board Lite -->
+    <article class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M10.5 5h3"/><path d="M9.5 15.5a4.5 4.5 0 0 1 5 0"/><circle cx="12" cy="12.4" r="0.8" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">Buddy Board Lite</h2>
+          <div class="version"><i></i> You’re updating to v1.1</div>
+        </div>
+      </div>
+      <p class="whats">A tidy-up release: the version shown is the true version, the Updates button opens the real updates page in your browser, and our full name — Off Grid Buddy Solutions — is on the page.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.1.apk" data-app="Buddy Board Lite" aria-label="Download Buddy Board Lite">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download Buddy Board Lite
+      </a>
+      <p class="file-note"><code>BuddyBoardLite-1.1.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/BuddyBoardLite-1.1-web.zip">Web edition (.zip)</a></p>
+      <a class="report" href="mailto:ashleygutshall82@gmail.com?subject=Buddy%20Board%20Lite%20problem%20report&amp;body=What%20happened%3A%0A%0AWhat%20it%20should%20have%20done%3A%0A%0AWhat%20the%20screen%20showed%3A%0A">Report a problem with Buddy Board Lite</a>
+    </article>
+
+    <!-- Water Buddy -->
+    <article class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5c2.8 3.6 6 7.3 6 10.7a6 6 0 0 1-12 0C6 10.8 9.2 7.1 12 3.5Z"/><path d="M9.2 14.2a2.9 2.9 0 0 0 2 3"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">Water Buddy</h2>
+          <div class="version"><i></i> You’re updating to v1.4</div>
+        </div>
+      </div>
+      <p class="whats">Words fixed to match the real thing: the heater runs on 12-volt DC power — from a battery with an inline fuse, or a plug-in supply that feeds the DC input. Water Buddy itself never touches house power.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.4.apk" data-app="Water Buddy" aria-label="Download Water Buddy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download Water Buddy
+      </a>
+      <p class="file-note"><code>WaterBuddy-1.4.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/WaterBuddy-1.4-web.zip">Web edition (.zip)</a></p>
+    </article>
+
+    <!-- Buddy Tech -->
+    <article class="card">
+      <div class="card-top">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.2 4.2 0 0 0-5.6 5.3L3 17.7V21h3.3l6.1-6.1a4.2 4.2 0 0 0 5.3-5.6l-2.8 2.8-2.1-.6-.6-2.1 2.5-3.1Z"/></svg>
+        </div>
+        <div class="card-head">
+          <h2 class="app-name">Buddy Tech</h2>
+          <div class="version"><i></i> You’re updating to v1.2</div>
+        </div>
+      </div>
+      <p class="whats">A tidy-up release: the version on the About line is the true version, Open updates page opens the real updates page in your browser, and the footer now carries our full name — Off Grid Buddy Solutions.</p>
+      <a class="download" href="https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.2.apk" data-app="Buddy Tech" aria-label="Download Buddy Tech">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+        Download Buddy Tech
+      </a>
+      <p class="file-note"><code>BuddyTech-1.2.apk</code> · <a class="webzip" href="https://offgridbuddy.github.io/buddy-updates/web/BuddyTech-1.2-web.zip">Web edition (.zip)</a></p>
+    </article>
+
+  </section>
+
+  <footer>
+    <div class="lite">
+      <div class="lite-dot" aria-hidden="true"></div>
+      <p><strong>All eight programs are here.</strong> Every Buddy program is released and ready to download above — TankMate, Voltkeep Buddy, BuddyRay, Buddy Board, Off Grid Buddy, Buddy Board Lite, Water Buddy, and Buddy Tech.</p>
+    </div>
+    <p class="fine">Buddy Family Updates · Off Grid Buddy Solutions</p>
+  </footer>
+</main>
+
+</body>
+</html>
