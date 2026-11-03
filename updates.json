@@ -15,19 +15,19 @@
     "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow BuddyRay to install its own updates; the app explains it in plain words and walks you through it. Your setups carry over."
   },
   "buddyboard": {
-    "version": "1.13",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.13.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Buddy Board to install its own updates; the app explains it in plain words and walks you through it. Your board settings carry over."
+    "version": "1.14",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.14.apk",
+    "notes": "Buddy Board gains the Water Pressure High and Water Pressure Low alarms, each with its own silent switch, and its water gauge now says “not set up” for a tank that hasn't been taught yet. Your board settings carry over."
   },
   "offgridbuddy": {
-    "version": "2.13",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.13.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Off Grid Buddy to install its own updates; the app explains it in plain words and walks you through it. Your dash choices carry over."
+    "version": "2.14",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.14.apk",
+    "notes": "The dash now says “not set up” for a water tank that hasn't been taught yet instead of guessing at a level, and two new alarms — Water Pressure High and Water Pressure Low — join the alarm list, each with its own silent switch. Your dash choices carry over."
   },
   "waterbuddy": {
-    "version": "1.6",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.6.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Water Buddy to install its own updates; the app explains it in plain words and walks you through it. Your tanks and settings carry over."
+    "version": "1.7",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.7.apk",
+    "notes": "Teach Water Buddy your tank — measure it, pick a common size, or show it the tank empty and full — so the level gauge reads right. Water Buddy now also watches line pressure and warns you if it runs too high or too low. Your tanks and settings carry over."
   },
   "buddytech": {
     "version": "1.4",
