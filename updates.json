@@ -1,42 +1,42 @@
 {
   "tankmate": {
-    "version": "1.13",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.13.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow TankMate to install its own updates; the app explains it in plain words and walks you through it. Your tanks and settings carry over."
+    "version": "1.14",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.14.apk",
+    "notes": "Away Alerts are here: if an alarm sounds while you're away, TankMate keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your tanks and settings carry over."
   },
   "batterybuddy": {
-    "version": "1.17",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.17.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Voltkeep Buddy to install its own updates; the app explains it in plain words and walks you through it. Your saved banks carry over."
+    "version": "1.18",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.18.apk",
+    "notes": "Away Alerts are here: if an alarm sounds while you're away, Voltkeep Buddy keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your saved banks carry over."
   },
   "solarbuddy": {
-    "version": "1.12",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.12.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow BuddyRay to install its own updates; the app explains it in plain words and walks you through it. Your setups carry over."
+    "version": "1.13",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.13.apk",
+    "notes": "Away Alerts are here: if an alarm sounds while you're away, BuddyRay keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your setups carry over."
   },
   "buddyboard": {
-    "version": "1.14",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.14.apk",
-    "notes": "Buddy Board gains the Water Pressure High and Water Pressure Low alarms, each with its own silent switch, and its water gauge now says “not set up” for a tank that hasn't been taught yet. Your board settings carry over."
+    "version": "1.15",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.15.apk",
+    "notes": "Away Alerts are here: if an alarm sounds while you're away, Buddy Board keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your board settings carry over."
   },
   "offgridbuddy": {
-    "version": "2.14",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.14.apk",
-    "notes": "The dash now says “not set up” for a water tank that hasn't been taught yet instead of guessing at a level, and two new alarms — Water Pressure High and Water Pressure Low — join the alarm list, each with its own silent switch. Your dash choices carry over."
+    "version": "2.15",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.15.apk",
+    "notes": "Away Alerts are here: if an alarm sounds while you're away, Off Grid Buddy keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Dash alarms now feed Away Alerts automatically. Your dash choices carry over."
   },
   "waterbuddy": {
-    "version": "1.7",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.7.apk",
-    "notes": "Teach Water Buddy your tank — measure it, pick a common size, or show it the tank empty and full — so the level gauge reads right. Water Buddy now also watches line pressure and warns you if it runs too high or too low. Your tanks and settings carry over."
+    "version": "1.8",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.8.apk",
+    "notes": "Away Alerts are here: if an alarm sounds while you're away, Water Buddy keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your tanks and settings carry over."
   },
   "buddytech": {
-    "version": "1.4",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.4.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Buddy Tech to install its own updates; the app explains it in plain words and walks you through it. Your saved notes carry over."
+    "version": "1.5",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.5.apk",
+    "notes": "Away Alerts are here: if an alarm sounds while you're away, Buddy Tech keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your saved notes carry over."
   },
   "buddyboardlite": {
-    "version": "1.3",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.3.apk",
-    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Buddy Board Lite to install its own updates; the app explains it in plain words and walks you through it. Nothing else changes."
+    "version": "1.5",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.5.apk",
+    "notes": "Buddy Board Lite is now the family's update ferry: while it has internet it can fetch the newest Buddy apps, then share them with the main board nearby — you confirm first, with a plain warning that the main board's alarms and heaters pause while it updates. Away Alerts arrive too. Nothing else changes."
   }
 }
