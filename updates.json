@@ -15,14 +15,14 @@
     "notes": "This app's updates now live at their permanent home — the Buddy Family Updates shelf — and its update button opens that shelf. Your setups carry over."
   },
   "buddyboard": {
-    "version": "1.11",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.11.apk",
-    "notes": "The dial gauges got a realistic new look — brushed-metal rims, orange needles, a soft shadow under each dial, and a little window showing the exact reading. Your board settings carry over."
+    "version": "1.12",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.12.apk",
+    "notes": "The metal frames around the gauges are now dished in, like a shallow bowl, with allen screws in the corners. Your board settings carry over."
   },
   "offgridbuddy": {
-    "version": "2.11",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.11.apk",
-    "notes": "The dial gauges got a realistic new look — brushed-metal rims, orange needles, a soft shadow under each dial, and a little window showing the exact reading. Your dash choices carry over."
+    "version": "2.12",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.12.apk",
+    "notes": "The metal frames around the gauges are now dished in, like a shallow bowl, with allen screws in the corners. Your dash choices carry over."
   },
   "waterbuddy": {
     "version": "1.5",
