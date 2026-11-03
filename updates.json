@@ -1,42 +1,42 @@
 {
   "tankmate": {
-    "version": "1.14",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.14.apk",
-    "notes": "Away Alerts are here: if an alarm sounds while you're away, TankMate keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your tanks and settings carry over."
+    "version": "1.15",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.15.apk",
+    "notes": "New: a Report a problem link at the bottom of Settings. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Your tanks and settings carry over."
   },
   "batterybuddy": {
-    "version": "1.18",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.18.apk",
-    "notes": "Away Alerts are here: if an alarm sounds while you're away, Voltkeep Buddy keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your saved banks carry over."
+    "version": "1.19",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.19.apk",
+    "notes": "New: a Report a problem link at the bottom of Settings. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Your saved banks carry over."
   },
   "solarbuddy": {
-    "version": "1.13",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.13.apk",
-    "notes": "Away Alerts are here: if an alarm sounds while you're away, BuddyRay keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your setups carry over."
+    "version": "1.14",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.14.apk",
+    "notes": "New: a Report a problem link at the bottom of Settings. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Your setups carry over."
   },
   "buddyboard": {
-    "version": "1.15",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.15.apk",
-    "notes": "Away Alerts are here: if an alarm sounds while you're away, Buddy Board keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your board settings carry over."
+    "version": "1.16",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.16.apk",
+    "notes": "New: a Report a problem link at the bottom of Settings. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Your board settings carry over."
   },
   "offgridbuddy": {
-    "version": "2.15",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.15.apk",
-    "notes": "Away Alerts are here: if an alarm sounds while you're away, Off Grid Buddy keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Dash alarms now feed Away Alerts automatically. Your dash choices carry over."
+    "version": "2.16",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.16.apk",
+    "notes": "New: a Report a problem link at the bottom of Settings. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Your dash choices carry over."
   },
   "waterbuddy": {
-    "version": "1.8",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.8.apk",
-    "notes": "Away Alerts are here: if an alarm sounds while you're away, Water Buddy keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your tanks and settings carry over."
+    "version": "1.9",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.9.apk",
+    "notes": "New: a Report a problem link at the bottom of Settings. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Your tanks and settings carry over."
   },
   "buddytech": {
-    "version": "1.5",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.5.apk",
-    "notes": "Away Alerts are here: if an alarm sounds while you're away, Buddy Tech keeps the alert safe and passes it along — through the hub first, then any Buddy app with a connection — until it can reach your phone. Tap the Away Alerts button to see yours. Your saved notes carry over."
+    "version": "1.6",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.6.apk",
+    "notes": "New: a Report a problem link at the bottom of the Tech Notes card. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Your saved notes carry over."
   },
   "buddyboardlite": {
-    "version": "1.5",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.5.apk",
-    "notes": "Buddy Board Lite is now the family's update ferry: while it has internet it can fetch the newest Buddy apps, then share them with the main board nearby — you confirm first, with a plain warning that the main board's alarms and heaters pause while it updates. Away Alerts arrive too. Nothing else changes."
+    "version": "1.6",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.6.apk",
+    "notes": "New: a Report a problem link at the bottom of the page, beside the update buttons. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Nothing else changes."
   }
 }
