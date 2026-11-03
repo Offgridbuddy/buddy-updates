@@ -1,42 +1,42 @@
 {
   "tankmate": {
-    "version": "1.12",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.12.apk",
-    "notes": "This app's updates now live at their permanent home — the Buddy Family Updates shelf — and its update button opens that shelf. Your tanks and settings carry over."
+    "version": "1.13",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/TankMate-1.13.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow TankMate to install its own updates; the app explains it in plain words and walks you through it. Your tanks and settings carry over."
   },
   "batterybuddy": {
-    "version": "1.16",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.16.apk",
-    "notes": "This app's updates now live at their permanent home — the Buddy Family Updates shelf — and its update button opens that shelf. Your saved banks carry over."
+    "version": "1.17",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/VoltkeepBuddy-1.17.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Voltkeep Buddy to install its own updates; the app explains it in plain words and walks you through it. Your saved banks carry over."
   },
   "solarbuddy": {
-    "version": "1.11",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.11.apk",
-    "notes": "This app's updates now live at their permanent home — the Buddy Family Updates shelf — and its update button opens that shelf. Your setups carry over."
+    "version": "1.12",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyRay-1.12.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow BuddyRay to install its own updates; the app explains it in plain words and walks you through it. Your setups carry over."
   },
   "buddyboard": {
-    "version": "1.12",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.12.apk",
-    "notes": "The metal frames around the gauges are now dished in, like a shallow bowl, with allen screws in the corners. Your board settings carry over."
+    "version": "1.13",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoard-1.13.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Buddy Board to install its own updates; the app explains it in plain words and walks you through it. Your board settings carry over."
   },
   "offgridbuddy": {
-    "version": "2.12",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.12.apk",
-    "notes": "The metal frames around the gauges are now dished in, like a shallow bowl, with allen screws in the corners. Your dash choices carry over."
+    "version": "2.13",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/OffGridBuddy-2.13.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Off Grid Buddy to install its own updates; the app explains it in plain words and walks you through it. Your dash choices carry over."
   },
   "waterbuddy": {
-    "version": "1.5",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.5.apk",
-    "notes": "This app's updates now live at their permanent home — the Buddy Family Updates shelf — and its update button opens that shelf. Your tanks and settings carry over."
+    "version": "1.6",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/WaterBuddy-1.6.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Water Buddy to install its own updates; the app explains it in plain words and walks you through it. Your tanks and settings carry over."
   },
   "buddytech": {
-    "version": "1.3",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.3.apk",
-    "notes": "This app's updates now live at their permanent home — the Buddy Family Updates shelf — and its update button opens that shelf. Your saved notes carry over."
+    "version": "1.4",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyTech-1.4.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Buddy Tech to install its own updates; the app explains it in plain words and walks you through it. Your saved notes carry over."
   },
   "buddyboardlite": {
-    "version": "1.2",
-    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.2.apk",
-    "notes": "This app's updates now live at their permanent home — the Buddy Family Updates shelf — and its update button opens that shelf. Nothing else changes."
+    "version": "1.3",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.3.apk",
+    "notes": "Updates now download and install right inside the app — tap Update, then tap Install when Android asks. The first time, Android will ask you to allow Buddy Board Lite to install its own updates; the app explains it in plain words and walks you through it. Nothing else changes."
   }
 }
