@@ -38,5 +38,10 @@
     "version": "1.6",
     "apk": "https://offgridbuddy.github.io/buddy-updates/apks/BuddyBoardLite-1.6.apk",
     "notes": "New: a Report a problem link at the bottom of the page, beside the update buttons. Tap it and your mail app opens with the report already addressed to us — just tell us what went wrong. Nothing else changes."
+  },
+  "sharkconsole": {
+    "version": "1.3",
+    "apk": "https://offgridbuddy.github.io/buddy-updates/apks/SharkConsole-1.3.apk",
+    "notes": "New: opening the console shows Shark's latest words only — not everything he has ever said — and new replies arrive on their own. The console can now update itself too, from the Updates row at the bottom. Your settings carry over."
   }
 }
