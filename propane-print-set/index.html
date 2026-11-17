@@ -15,7 +15,10 @@
         background:rgba(232,230,225,.85);}
   #key{position:fixed;top:52px;left:8px;background:rgba(255,255,255,.88);border:1.5px solid #888;
        border-radius:10px;padding:8px 10px;font-size:13.5px;color:#222;max-width:78vw;}
-  #key .kt{font-weight:bold;font-size:14px;margin-bottom:4px;}
+  #key .kt{font-weight:bold;font-size:14px;margin-bottom:4px;cursor:pointer;}
+  #key{max-height:72vh;overflow-y:auto;}
+  #key.closed .krow{display:none;}
+  #key.closed .kt{margin-bottom:0;}
   .krow{display:flex;align-items:center;gap:7px;padding:1.5px 0;}
   .dot{width:14px;height:14px;border-radius:4px;border:1px solid #555;flex:none;}
   .kname{font-weight:600;}
@@ -25,7 +28,7 @@
 <body>
 <canvas id="c"></canvas>
 <div id="hint">Propane PRINT SET &middot; every part, inspect before printing &middot; drag to spin &middot; pinch to zoom &middot; double-tap resets</div>
-<div id="key"><div class="kt">SIZE KEY (mm)</div><div class="krow"><span class="dot" style="background:rgb(96,118,148)"></span><span class="kname">Node box base</span><span class="kdims">84.8 x 74.8 x 20.5 mm</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Rubber feet strips (TPU, shown fitted)</span><span class="kdims">4 strips, 79.8 x 5.0 x 1.2 mm each, fingers d2.2 x 1.2</span></div><div class="krow"><span class="dot" style="background:rgb(64,148,138)"></span><span class="kname">Node box lid - PROPANE</span><span class="kdims">84.8 x 74.8 x 20.9 mm</span></div><div class="krow"><span class="dot" style="background:rgb(176,116,64)"></span><span class="kname">Puck body - emblem + PROPANE</span><span class="kdims">112.0 x 52.0 x 20.0 mm</span></div><div class="krow"><span class="dot" style="background:rgb(200,140,80)"></span><span class="kname">Puck cover</span><span class="kdims">96.0 x 48.0 x 5.0 mm</span></div><div class="krow"><span class="dot" style="background:rgb(150,100,60)"></span><span class="kname">Puck clamp bar</span><span class="kdims">26.0 x 3.5 x 8.0 mm</span></div><div class="krow"><span class="dot" style="background:rgb(38,38,38)"></span><span class="kname">Emblem (base underside / puck north wall)</span><span class="kdims">19.0 mm on the box, 17.0 mm on the puck, recessed 0.8</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Standing height, node box on feet</span><span class="kdims">33.5 mm total (29.8 body + 2.5 ribs + 1.2 rubber)</span></div><div class="krow"><span class="dot" style="background:rgb(90,90,90)"></span><span class="kname">Scale bar (gray)</span><span class="kdims">50.0 long x 10.0 tall mm</span></div></div>
+<div id="key" class="closed"><div class="kt" id="ktBtn">SIZE KEY (mm) — tap to open</div><div class="krow"><span class="dot" style="background:rgb(96,118,148)"></span><span class="kname">Node box base</span><span class="kdims">84.8 x 74.8 x 20.5 mm</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Rubber feet strips (TPU, shown fitted)</span><span class="kdims">4 strips, 79.8 x 5.0 x 1.2 mm each, fingers d2.2 x 1.2</span></div><div class="krow"><span class="dot" style="background:rgb(64,148,138)"></span><span class="kname">Node box lid - PROPANE</span><span class="kdims">84.8 x 74.8 x 20.9 mm</span></div><div class="krow"><span class="dot" style="background:rgb(176,116,64)"></span><span class="kname">Puck body - emblem + PROPANE</span><span class="kdims">112.0 x 52.0 x 20.0 mm</span></div><div class="krow"><span class="dot" style="background:rgb(200,140,80)"></span><span class="kname">Puck cover</span><span class="kdims">96.0 x 48.0 x 5.0 mm</span></div><div class="krow"><span class="dot" style="background:rgb(150,100,60)"></span><span class="kname">Puck clamp bar</span><span class="kdims">26.0 x 3.5 x 8.0 mm</span></div><div class="krow"><span class="dot" style="background:rgb(38,38,38)"></span><span class="kname">Emblem (base underside / puck north wall)</span><span class="kdims">19.0 mm on the box, 17.0 mm on the puck, recessed 0.8</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Standing height, node box on feet</span><span class="kdims">33.5 mm total (29.8 body + 2.5 ribs + 1.2 rubber)</span></div><div class="krow"><span class="dot" style="background:rgb(90,90,90)"></span><span class="kname">Scale bar (gray)</span><span class="kdims">50.0 long x 10.0 tall mm</span></div></div>
 <div id="bar">
   <button id="bTop">Top</button>
   <button id="bFront">Front</button>
@@ -153,6 +156,12 @@ document.getElementById('bSide').onclick=function(){pitch=0;yaw=Math.PI/2;draw()
 document.getElementById('bReset').onclick=function(){autoSpin=false;document.getElementById('bSpin').className='';resetView();};
 document.getElementById('bSpin').onclick=function(){autoSpin=!autoSpin;this.className=autoSpin?'on':'';if(autoSpin)draw();};
 resize();
+</script>
+<script>
+document.getElementById('ktBtn').addEventListener('click',function(){
+  var k=document.getElementById('key');k.classList.toggle('closed');
+  this.textContent=k.classList.contains('closed')?'SIZE KEY (mm) — tap to open':'SIZE KEY (mm) — tap to close';
+});
 </script>
 </body>
 </html>
