@@ -19,12 +19,12 @@
   .dot{width:8px;height:8px;border-radius:2px;border:1px solid #555;flex:none;}
   .kname{font-weight:600;}
   .kdims{color:#444;}
-</style>
+#key.closed .krow{display:none;}#key{cursor:pointer;}</style>
 </head>
 <body>
 <canvas id="c"></canvas>
 <div id="hint">Propane node box SAMPLE &middot; flip it over: emblem + green rubber feet &middot; drag to spin &middot; pinch to zoom &middot; double-tap resets</div>
-<div id="key"><div class="kt">SIZE KEY (mm)</div><div class="krow"><span class="dot" style="background:rgb(96,118,148)"></span><span class="kname">Base - emblem + finger holes</span><span class="kdims">84.8 x 74.8 x 20.5 mm</span></div><div class="krow"><span class="dot" style="background:rgb(64,148,138)"></span><span class="kname">Lid - PROPANE</span><span class="kdims">84.8 x 74.8 x 20.9 mm</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Rubber feet strips (TPU 85A)</span><span class="kdims">4 strips, 79.8 x 5.0 x 1.2 mm each, fingers d2.2 x 1.2</span></div><div class="krow"><span class="dot" style="background:rgb(38,38,38)"></span><span class="kname">Emblem (base underside)</span><span class="kdims">19.0 x 19.0 mm, recessed 0.8, dead centre</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Standing height on feet</span><span class="kdims">33.5 mm total (29.8 body + 2.5 ribs + 1.2 rubber)</span></div><div class="krow"><span class="dot" style="background:rgb(90,90,90)"></span><span class="kname">Scale bar (gray)</span><span class="kdims">50.0 long x 10.0 tall mm</span></div></div>
+<div id="key" class="closed"><div class="kt">SIZE KEY (mm)</div><div class="krow"><span class="dot" style="background:rgb(96,118,148)"></span><span class="kname">Base - emblem + finger holes</span><span class="kdims">84.8 x 74.8 x 20.5 mm</span></div><div class="krow"><span class="dot" style="background:rgb(64,148,138)"></span><span class="kname">Lid - PROPANE</span><span class="kdims">84.8 x 74.8 x 20.9 mm</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Rubber feet strips (TPU 85A)</span><span class="kdims">4 strips, 79.8 x 5.0 x 1.2 mm each, fingers d2.2 x 1.2</span></div><div class="krow"><span class="dot" style="background:rgb(38,38,38)"></span><span class="kname">Emblem (base underside)</span><span class="kdims">19.0 x 19.0 mm, recessed 0.8, dead centre</span></div><div class="krow"><span class="dot" style="background:rgb(64,128,58)"></span><span class="kname">Standing height on feet</span><span class="kdims">33.5 mm total (29.8 body + 2.5 ribs + 1.2 rubber)</span></div><div class="krow"><span class="dot" style="background:rgb(90,90,90)"></span><span class="kname">Scale bar (gray)</span><span class="kdims">50.0 long x 10.0 tall mm</span></div></div>
 <div id="bar">
   <button id="bTop">Top</button>
   <button id="bFront">Front</button>
@@ -150,5 +150,5 @@ document.getElementById('bReset').onclick=function(){autoSpin=false;document.get
 document.getElementById('bSpin').onclick=function(){autoSpin=!autoSpin;this.className=autoSpin?'on':'';if(autoSpin)draw();};
 resize();
 </script>
-</body>
+<script>var keyEl=document.getElementById('key');if(keyEl){keyEl.addEventListener('click',function(){var closed=keyEl.classList.toggle('closed');var kt=keyEl.querySelector('.kt');if(kt){kt.textContent=closed?kt.textContent.replace('tap to close','tap to open'):kt.textContent.replace('tap to open','tap to close');}});}</script></body>
 </html>
