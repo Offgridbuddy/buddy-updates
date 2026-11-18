@@ -19,7 +19,7 @@
   .dot{width:8px;height:8px;border-radius:2px;border:1px solid #555;flex:none;}
   .kname{font-weight:600;}
   .kdims{color:#444;}
-</style>
+#key.closed .krow{display:none;}#key{cursor:pointer;}</style>
 </head>
 <body>
 <canvas id="c"></canvas>
@@ -148,5 +148,5 @@ document.getElementById('bReset').onclick=function(){autoSpin=false;document.get
 document.getElementById('bSpin').onclick=function(){autoSpin=!autoSpin;this.className=autoSpin?'on':'';if(autoSpin)draw();};
 resize();
 </script>
-</body>
+<script>var keyEl=document.getElementById('key');if(keyEl){keyEl.addEventListener('click',function(){var closed=keyEl.classList.toggle('closed');var kt=keyEl.querySelector('.kt');if(kt){kt.textContent=closed?kt.textContent.replace('tap to close','tap to open'):kt.textContent.replace('tap to open','tap to close');}});}</script></body>
 </html>
