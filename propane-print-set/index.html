@@ -162,5 +162,5 @@ document.getElementById('ktBtn').addEventListener('click',function(){
   this.textContent=k.classList.contains('closed')?'SIZE KEY (mm) — tap to open':'SIZE KEY (mm) — tap to close';
 });
 </script>
-</body>
+<script>var keyEl=document.getElementById('key');if(keyEl){keyEl.addEventListener('click',function(){var closed=keyEl.classList.toggle('closed');var kt=keyEl.querySelector('.kt');if(kt){kt.textContent=closed?kt.textContent.replace('tap to close','tap to open'):kt.textContent.replace('tap to open','tap to close');}});}</script></body>
 </html>
